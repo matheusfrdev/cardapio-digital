@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f3fd1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Cardápio App</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<div class="views">
+<section class="view on" id="v-menu">
+<div class="cover"><img id="capa" alt="" hidden></div>
+<div class="shop"><div class="sh"><div class="logo" id="logo"></div><div><h1 id="nome"></h1><div class="tags"><span class="tg" id="tipo"></span><span class="tg" id="aberto"></span></div></div></div>
+<button class="lk" id="info"><span data-ic="bike"></span>Ver tempo e taxa de entrega</button><p class="mn"><span data-ic="receipt"></span><span id="minimo"></span></p><div id="vant"></div></div>
+<div class="wave"></div>
+<div class="chips" id="chips"></div>
+<div class="pad"><div id="ban"></div><div id="menu"></div></div>
+<footer class="site-footer">Feito com <span class="footer-heart">&#10084;</span> por Matheus Fraga</footer>
+</section>
+<section class="view" id="v-search"><input type="text" class="sq" id="q" placeholder="Buscar no cardápio" aria-label="Buscar no cardápio"><div id="sres"></div></section>
+<section class="view" id="v-cart"></section>
+
+
+</div>
+<button class="mini" id="mini"><span id="mn"></span><span id="mt"></span></button>
+<nav class="tabs" aria-label="Navegação"><span class="nb" id="nb"></span>
+<button class="tab on" data-v="menu"><span data-ic="utensils"></span>Cardápio</button>
+<button class="tab" data-v="search"><span data-ic="search"></span>Buscar</button>
+<button class="tab" data-v="cart"><span data-ic="bag"></span>Pedido<i class="badge" id="badge" hidden></i></button>
+</nav>
+</div>
+
+<dialog class="delivery-card" id="delivery" aria-labelledby="delivery-title">
+<button class="delivery-close" id="delivery-close" aria-label="Fechar" autofocus>×</button>
+<div class="delivery-icon"><span data-ic="bike"></span></div>
+<h2 id="delivery-title">Entrega</h2>
+<div class="delivery-detail"><span>Tempo estimado</span><strong id="delivery-time"></strong></div>
+<div class="delivery-detail"><span>Taxa de entrega</span><strong id="delivery-fee"></strong></div>
+</dialog>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
